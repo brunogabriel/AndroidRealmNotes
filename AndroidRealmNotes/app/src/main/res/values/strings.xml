@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidRealmNotes</string>
+
+    <!-- Login Activity -->
+    <string name="app_login_activity_no_account">Do not have an account?</string>
+    <string name="app_login_activity_signup">Sign Up</string>
+
+</resources>
