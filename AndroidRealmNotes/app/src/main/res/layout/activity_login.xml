@@ -2,7 +2,74 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhiteTon"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/title_view"
+        android:orientation="vertical"
+        android:layout_above="@+id/view_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_login"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/horizontal_double_space"
+        android:paddingRight="@dimen/horizontal_double_space"
+        android:paddingTop="@dimen/horizontal_space"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            app:theme="@style/ApplicationTheme.FloatingEditText"
+            app:hintTextAppearance="@style/ApplicationTheme.FloatingEditText.Hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/etUsername"
+                android:hint="@string/app_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            app:theme="@style/ApplicationTheme.FloatingEditText"
+            app:hintTextAppearance="@style/ApplicationTheme.FloatingEditText.Hint"
+            android:layout_marginTop="@dimen/vertical_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/etPassword"
+                android:hint="@string/app_login_password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:theme="@style/ApplicationTheme.Button"
+            android:layout_marginTop="@dimen/horizontal_double_space"
+            android:text="@string/app_login_activity_signin"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvNoAccount"
+            android:gravity="center"
+            android:height="@dimen/view_min_height"
+            android:minHeight="@dimen/horizontal_double_space"
+            android:layout_marginTop="@dimen/horizontal_space"
+            android:layout_marginBottom="@dimen/horizontal_space"
+            android:text="@string/app_login_activity_no_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
 
 </RelativeLayout>

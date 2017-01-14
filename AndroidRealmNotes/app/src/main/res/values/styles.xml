@@ -1,11 +1,52 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <!-- Global Theme -->
+    <style name="ApplicationTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
     </style>
 
+    <!-- ProgressDialog color -->
+    <style name="ApplicationTheme.ProgressDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Button -->
+    <style name="ApplicationTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ApplicationTheme.NotTranslucent" parent="ApplicationTheme">
+        <!-- Stub v21 -->
+    </style>
+
+    <style name="ApplicationTheme.NavigationNotTranslucent" parent="ApplicationTheme">
+        <!-- Stub v21 -->
+    </style>
+
+    <style name="ApplicationTheme.FloatingEditText" parent="ApplicationTheme">
+        <item name="colorControlNormal">@color/colorGrayLevelLight</item>          <!-- Line Bottom Deactivated -->
+        <item name="colorControlActivated">@color/colorGrayLevel</item>       <!-- Line Bottom Actived -->
+        <item name="android:textColorHighlight">@color/colorGrayLevelLight</item>     <!-- Text Selected to Copy -->
+        <item name="android:textColorHint">@color/colorGrayLevel</item>               <!-- Color Hint Not Actived -->
+        <item name="android:textColorPrimary">@color/colorBlackTon</item>            <!-- Text Inserted -->
+    </style>
+
+    <style name="ApplicationTheme.FloatingEditText.Hint" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/colorGrayLevelLight</item>
+        <item name="colorAccent">@color/colorGrayLevelLight</item>
+        <item name="colorControlNormal">@color/colorGrayLevelLight</item>
+        <item name="colorControlActivated">@color/colorGrayLevelLight</item>
+    </style>
+
+    <style name="ExpandedDonationBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

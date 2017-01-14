@@ -4,5 +4,8 @@
     <!-- Login Activity -->
     <string name="app_login_activity_no_account">Do not have an account?</string>
     <string name="app_login_activity_signup">Sign Up</string>
+    <string name="app_login_activity_signin">Sign In</string>
+    <string name="app_login_username">Username</string>
+    <string name="app_login_password">Password</string>
 
 </resources>
