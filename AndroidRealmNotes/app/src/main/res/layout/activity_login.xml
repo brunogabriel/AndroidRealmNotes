@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/colorWhiteTon"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -31,6 +31,8 @@
             <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/etUsername"
                 android:hint="@string/app_login_username"
+                android:maxLines="1"
+                android:inputType="text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </android.support.design.widget.TextInputLayout>
@@ -44,6 +46,7 @@
             <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/etPassword"
                 android:hint="@string/app_login_password"
+                android:maxLines="1"
                 android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -52,14 +55,18 @@
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/btnLogin"
             android:theme="@style/ApplicationTheme.Button"
-            android:layout_marginTop="@dimen/horizontal_double_space"
+            tools:ignore="MissingPrefix"
+            fontPath="fonts/Roboto/Roboto-Bold.ttf"
             android:text="@string/app_login_activity_signin"
+            android:layout_marginTop="@dimen/horizontal_double_space"
             android:textColor="@android:color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <android.support.v7.widget.AppCompatTextView
             android:id="@+id/tvNoAccount"
+            tools:ignore="MissingPrefix"
+            fontPath="fonts/Roboto/Roboto-Light.ttf"
             android:gravity="center"
             android:height="@dimen/view_min_height"
             android:minHeight="@dimen/horizontal_double_space"
@@ -68,7 +75,6 @@
             android:text="@string/app_login_activity_no_account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
 
     </LinearLayout>
 
