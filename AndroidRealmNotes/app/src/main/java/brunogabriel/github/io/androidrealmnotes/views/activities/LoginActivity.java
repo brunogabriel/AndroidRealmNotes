@@ -1,5 +1,6 @@
 package brunogabriel.github.io.androidrealmnotes.views.activities;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import brunogabriel.github.io.androidrealmnotes.manager.App;
 import brunogabriel.github.io.androidrealmnotes.manager.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by brunogabriel on 14/01/17.
@@ -41,7 +43,6 @@ public class LoginActivity extends BaseActivity {
     @Override
     protected void initUI() {
         ButterKnife.bind(this);
-
         // Apply Spannable String Effect
         String noAccount = getString(R.string.app_login_activity_no_account);
         String signup = getString(R.string.app_login_activity_signup);
@@ -49,5 +50,11 @@ public class LoginActivity extends BaseActivity {
         spannableString.setSpan(new StyleSpan(Typeface.BOLD), spannableString.length() - signup.length(),
                 spannableString.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         tvNoAccount.setText(spannableString);
+    }
+
+    @OnClick(R.id.tvNoAccount)
+    protected void onClickSignup() {
+        Intent mIntent = new Intent(this, SignupActivity.class);
+        startActivity(mIntent);
     }
 }

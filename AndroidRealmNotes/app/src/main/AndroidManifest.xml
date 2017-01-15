@@ -10,11 +10,17 @@
         android:theme="@style/ApplicationTheme">
 
         <activity android:name=".views.activities.LoginActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/ApplicationTheme.NotTranslucent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+
+        <activity android:name=".views.activities.SignupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ApplicationTheme.NotTranslucent">
         </activity>
 
     </application>

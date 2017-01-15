@@ -1,0 +1,118 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhiteTon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.design.widget.AppBarLayout
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_white"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/horizontal_double_space"
+            android:paddingRight="@dimen/horizontal_double_space"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_marginTop="@dimen/vertical_space"
+                android:layout_gravity="center"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:src="@drawable/ic_no_image"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimary"/>
+
+            <android.support.design.widget.TextInputLayout
+                app:theme="@style/ApplicationTheme.FloatingEditText"
+                app:hintTextAppearance="@style/ApplicationTheme.FloatingEditText.Hint"
+                android:layout_marginTop="@dimen/vertical_double_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etfullName"
+                    android:hint="@string/app_signup_activity_fullname"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                app:theme="@style/ApplicationTheme.FloatingEditText"
+                app:hintTextAppearance="@style/ApplicationTheme.FloatingEditText.Hint"
+                android:layout_marginTop="@dimen/vertical_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etEmail"
+                    android:hint="@string/app_signup_activity_email"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                app:theme="@style/ApplicationTheme.FloatingEditText"
+                app:hintTextAppearance="@style/ApplicationTheme.FloatingEditText.Hint"
+                android:layout_marginTop="@dimen/vertical_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etPassword"
+                    android:hint="@string/app_signup_activity_password"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                app:theme="@style/ApplicationTheme.FloatingEditText"
+                app:hintTextAppearance="@style/ApplicationTheme.FloatingEditText.Hint"
+                android:layout_marginTop="@dimen/vertical_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etRepeatPass"
+                    android:hint="@string/app_signup_activity_repeat_password"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnCreate"
+                android:theme="@style/ApplicationTheme.Button"
+                tools:ignore="MissingPrefix"
+                fontPath="fonts/Roboto/Roboto-Bold.ttf"
+                android:text="@string/app_signup_activity_create"
+                android:layout_marginTop="@dimen/horizontal_double_space"
+                android:layout_marginBottom="@dimen/horizontal_double_space"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

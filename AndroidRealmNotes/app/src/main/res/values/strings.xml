@@ -1,5 +1,7 @@
 <resources>
+
     <string name="app_name">AndroidRealmNotes</string>
+    <string name="app_name_break">REALM\nNOTES</string>
 
     <!-- Login Activity -->
     <string name="app_login_activity_no_account">Do not have an account?</string>
@@ -7,5 +9,13 @@
     <string name="app_login_activity_signin">Sign In</string>
     <string name="app_login_username">Username</string>
     <string name="app_login_password">Password</string>
+    
+    <!-- Signup Activity -->
+    <string name="app_signup_activity_fullname">Full Name</string>
+    <string name="app_signup_activity_email">Email</string>
+    <string name="app_signup_activity_password">Password</string>
+    <string name="app_signup_activity_repeat_password">Repeat Password</string>
+    <string name="app_signup_activity_create">Create</string>
+
 
 </resources>

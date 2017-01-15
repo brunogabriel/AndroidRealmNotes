@@ -51,4 +51,11 @@
         <item name="android:colorControlActivated">@color/colorGrayLevelLight</item>
     </style>
 
+    <!-- Toolbar -->
+    <style name="WhiteToolbarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="actionMenuTextColor">@color/colorPrimary</item>
+    </style>
+
 </resources>

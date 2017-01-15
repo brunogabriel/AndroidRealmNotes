@@ -33,6 +33,7 @@ ext {
     callygraphLibVersion = "2.2.0"
     butterknifeLibVersion = "8.4.0"
     dagger2libVersion = "2.7"
+    circleImageViewVersion = "2.1.0"
 }
 
 dependencies {
@@ -60,6 +61,9 @@ dependencies {
 
     // Calligraphy
     compile "uk.co.chrisjenx:calligraphy:${callygraphLibVersion}"
+
+    // CircleImageView
+    compile "de.hdodenhof:circleimageview:${circleImageViewVersion}"
 
     testCompile 'junit:junit:4.12'
 }
